@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(66, 57, 45);
+}
+
+h1 {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 150px;
+  margin-left: 200px;
+  margin-top: 150px;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  box-shadow: 0 5px 10px rgba(255, 253, 253, 0.123);
+}
+.display {
+  background-color: rgba(255, 249, 249, 0.274);
+  backdrop-filter: blur(1px);
+  padding: 5px;
+  height: 90px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  background-color: rgb(255 255 255 / 21%);
+  backdrop-filter: blur(1px);
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  text-shadow: 0 0 2px black;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: #FC2F00;
+}
